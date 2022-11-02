@@ -8,8 +8,10 @@ if(playerInput == '1'){
     playerMove = 'kamień';
 } else if (playerInput == '2') {
     playerMove = 'papier'
-} else {
+} else if (playerInput == '3') {
     playerMove = 'nożyce'
+} else {
+    playerMove = 'Zła liczba'
 }
 
 printMessage('Twój ruch to: ' + playerMove);
@@ -44,4 +46,6 @@ if (playerInput == randomNumber) {
     printMessage ('Przegrałeś')
 } else if (playerInput == '3' && randomNumber == '2') {
     printMessage ('Wygrałeś')
+} else if (playerInput > '3') {
+    printMessage ('Liczba poza zakresem wyboru')
 }
